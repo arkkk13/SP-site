@@ -1,0 +1,36 @@
+// main: ../style.less
+
+.nav__link{
+	font-size: 16px;
+	color:@dark-grey ;
+
+	position: relative;
+
+	text-transform: none;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 19px;
+	margin-left: 35px;
+
+	&:after{
+		content: "";
+		width: 0;
+		height: 1px;
+		background-color: @dark-grey ;
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		z-index: 1;
+		transition: width .2s linear;
+	}
+
+	&:hover,
+	&.active{
+		&:after{
+			width: 100%;
+		}
+
+	}
+	
+}

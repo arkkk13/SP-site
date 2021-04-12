@@ -1,0 +1,51 @@
+// main: ../style.less
+.modal-service{
+
+	display: flex;
+}
+.modal-service__preview{
+	position: relative;
+	width: 50%;
+	overflow: hidden;
+	border-radius: 25px 0 0 25px;
+
+	&--sm{
+		border-radius: 0 25px 25px 0;
+	}
+}
+
+.modal-service__photo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+
+	z-index: 1;
+
+				transform:translate3d(-50%, -50%, 0)	
+}
+
+.modal-service__content{
+	width: 50%;
+	padding: 50px;
+}
+
+.modal-service__header{
+	
+font-weight: 800;
+font-size: 40px;
+line-height: 120%;
+}
+
+.modal-service__text{
+	font-size: 16px;
+	line-height: 140%;
+	padding: 20px 0;
+}
+.modal-service__cols{
+	display:flex ;
+	font-size: 16px;
+}
+.price__col{
+	width: 50%;
+}

@@ -1,0 +1,46 @@
+// main: ../style.less
+
+.intro__inner{
+display: flex;
+}
+
+.intro__content{
+	width: 50%;
+}
+
+.intro__photo{
+	width: 50%;
+}
+
+.intro__title{
+	margin-top: 160px;
+	margin-bottom: 40px;
+	font-size: 55px;
+	font-weight: 800;
+	line-height: 120%;
+}
+
+.intro{
+	width: 100%;
+	height: 700px;
+	background-image: url("/../../img/bg-main.png");
+	background-size: cover;
+}
+.intro__text{
+	font-weight: 500;
+	font-size: 22px;
+	color:@lighter-blue ;
+	line-height: 137%;
+}
+.intro__photo{
+	position:absolute;
+	bottom: 45px;
+	right: 120px;
+	width: 550px;
+	transition: transform .3s linear;
+
+	&:hover{
+		transform: translateY(-10px);
+	}
+
+}

@@ -1,0 +1,47 @@
+// compress: true
+
+/* переменные */
+@import "vars";
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: @dark-blue;
+	font-size: 18px;
+	
+	background-color: #FDFDFD;
+	&.no-scroll{
+		overflow: hidden;
+	}
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+/* подключение */
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/intro-bot";
+@import "blocks/services";
+@import "blocks/work";
+@import "blocks/firms";
+@import "blocks/info";
+@import "blocks/contacts";
+@import "blocks/sendblock";
+@import "blocks/form";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-service";
+@import "blocks/modal-contact";
