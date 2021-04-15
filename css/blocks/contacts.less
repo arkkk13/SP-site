@@ -58,39 +58,44 @@
 	letter-spacing: 0.06em;
 	color: #283149;
 	position: relative;
-	margin-top: 15px;
+	margin: 15px 0;
 
 
 
-	&:after{
-		content: "";
-		width: 100%;
-		height: 1px;
-		background-color: lightgrey ;
-		position: absolute;
-		bottom: -5px;
-		left: 0;
-		z-index: 1;
+// 	&:after{
+// 		content: "";
+// 		width: 100%;
+// 		height: 1px;
+// 		background-color: lightgrey ;
+// 		position: absolute;
+// 		bottom: -5px;
+// 		left: 0;
+// 		z-index: 1;
 
-		transition: background-color .2s linear,height .2s linear ;
-	}
-	&:hover,
-	&.active{
-		&:after{
-			background-color: @dark-blue ;
-			height: 2px;
-		}
+// 		transition: background-color .2s linear,height .2s linear ;
+// 	}
+// 	&:hover,
+// 	&.active{
+// 		&:after{
+// 			background-color: @dark-blue ;
+// 			height: 2px;
+// 		}
 
-	}
-}
+// 	}
+ }
 
 .phones__number{
-	margin-top: 15px;
+	padding: 15px 0;
+	border-top: 2px solid rgb(172, 172, 172);
 	font-weight: 600;
 font-size: 24px;
 line-height: 140%;
 text-align: center;
 
 color: #000B46;
+transition: border-top .2s linear ;
+&:hover{
+	border-top: 2px solid @dark-blue;
+}
 
 }
