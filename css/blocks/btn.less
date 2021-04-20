@@ -2,7 +2,6 @@
 
 .btn{
 	display:inline-block;
-	vertical-align: top;
 	text-decoration: none;
 	margin-top: 30px;
 	padding: 25px 60px;
@@ -33,24 +32,37 @@ letter-spacing: 0.1em;
 		box-shadow: 0px 4px 20px fade(@dark-blue, 15%);
 	}
 
+	@media @tabletnormal{
+		padding: 20px 30px;
+		font-size: 14px;
+			}
+
 }
 
 .btn--form{
 	margin-top: 70px;
 }
 .btn--call{
+	box-shadow: none;
 	color: @blue;
 	background-color: #fff;
 	border: 2px @blue solid;
 	border-radius: 50px;
-	font-size: 12px;
-	padding: 15px;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform:none;
+	padding: 11px;
 	text-align: center;
 	margin: 0;
-	display:inline;
 	margin-left: 35px;
+	transition:box-shadow .2s linear,background-color .3s linear,color .2s linear  ;
 	&:hover{
+		box-shadow: 0px 4px 20px fade(@blue, 15%);
 		background-color: @blue;
 		color: #fff;
+	}
+
+	&:after{
+		display: none;
 	}
 }

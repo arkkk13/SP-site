@@ -1,19 +1,22 @@
 // main: ../style.less
 
 .work{
-	box-shadow:0px 5px 5px fade(#000 , 15%); 
+	box-shadow:0px 5px 5px fade(#000 , 15%);
 	border-radius: 22px;
 	padding-bottom: 20px;
 	text-align: center;
 	height: 465px;
-	
+
 	background-color: #fff;
 	transition: box-shadow 0.5s linear, transform 0.3s linear;
-	
+
 	&:hover{
-		box-shadow:0px 5px 20px fade(#000 , 15%); 
+		box-shadow:0px 5px 20px fade(#000 , 15%);
 		transform:translateY(-3px);
 	}
+}
+.works{
+	flex-wrap: wrap;
 }
 
 .work__image{
@@ -39,9 +42,9 @@ padding-bottom: 20px;
 	font-size: 15px;
 	line-height: 140%;
 	/* or 21px */
-	
+
 	text-align: center;
-	
+
 	color: #5C5C5C;
 }
 .work__btn{
@@ -71,5 +74,5 @@ padding-bottom: 20px;
 		border-bottom:2px #F4F3F8 solid;
 	}
 }
-	
+
 }

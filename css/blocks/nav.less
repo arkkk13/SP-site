@@ -1,7 +1,12 @@
 // main: ../style.less
-
+.nav{
+	flex-wrap: nowrap;
+	@media @tablet{
+		display: none;
+	}
+}
 .nav__link{
-	font-size: 16px;
+	font-size: 14px;
 	color:@dark-grey ;
 
 	position: relative;
@@ -32,5 +37,5 @@
 		}
 
 	}
-	
+
 }
