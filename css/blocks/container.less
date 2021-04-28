@@ -5,8 +5,21 @@
 	max-width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
-	
+
 	margin: 0 auto;
+
+	@media @pcsmall{
+		max-width: 960px;
+	}
+	@media @tablet{
+		max-width: 720px;
+	}
+	@media @mobilebig{
+		max-width: 540px;
+	}
+	@media @mobile{
+		max-width: none;
+	}
 }
 
 .container--firms{
@@ -14,6 +27,7 @@
 	max-width: 1400px;
 	padding-left: 15px;
 	padding-right: 15px;
-	
+
 	margin: 0 auto;
 }
+

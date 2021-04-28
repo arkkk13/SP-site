@@ -3,6 +3,14 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: 100px;
+	@media @mobilebig{
+		padding-top: 50px;
+	}
+	@media @mobile{
+		text-align: center;
+		display: block;
+		padding-top: 20px;
+	}
 }
 .intro__item{
 	font-weight: 500;
@@ -10,6 +18,13 @@
 	line-height: 20px;
 	letter-spacing: 0.05em;
 	color: #9E9C9C;
+	@media @mobilebig{
+		font-size: 14px;
+	}
+	@media @mobile{
+		letter-spacing: 0;
+		margin-bottom: 5px;
+	}
 }
 .link--contacts{
 	text-decoration: none;

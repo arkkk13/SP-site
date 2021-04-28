@@ -2,9 +2,12 @@
 
 .firms__title{
 	font-weight: 800;
-font-size: 45px;
-line-height: 120%;
-color: @dark-blue;
+	font-size: 45px;
+	line-height: 120%;
+	color: @dark-blue;
+	max-width: 700px;
+	flex-basis: 75%;
+
 }
 .firms__inner{
 	margin: 160px 0;
@@ -18,9 +21,11 @@ color: @dark-blue;
 .firms__top{
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
 .brands{
 	display: flex;
+	z-index: 15;
 	flex-wrap: wrap;
 	margin: 0 -85px;
 	padding-top: 80px;
@@ -29,4 +34,22 @@ color: @dark-blue;
 	flex-basis: 25%;
 	padding-left: 85px;
 	margin-bottom: 80px;
+
+
+}
+.--last{
+	display: none;
+
+	}
+.firms__img{
+	z-index: 1;
+	position: absolute;
+	right: 0;
+	top: 0;
+	flex-basis: 25%;
+	display: block;
+	padding-left: 10px;
+	width: 100%;
+	max-width: 200px;
+	height: auto;
 }
