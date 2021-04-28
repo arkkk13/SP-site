@@ -4,6 +4,13 @@
 .services__title{
 	margin-bottom: 60px;
 
+	@media @tablet{
+		margin-bottom: 40px;
+	}
+	@media @mobilebig{
+		margin-bottom: 10px;
+	}
+
 }
 
 .services__col{
@@ -12,6 +19,13 @@
 	line-height: 120%;
 	color: #2F374E;
 
+	@media @pcsmall{
+		font-size: 35px;
+	}
+	@media @mobilebig{
+		font-size: 25px;
+		margin-left: 10px;
+	}
 
 
 }
@@ -22,6 +36,12 @@
 	box-shadow: 0px -7px 10px fade(@blue, 10%);
 	background-image: url('/../../img/services-bg.png');
 	border-bottom: 1px solid lightgray;
+	@media @tablet{
+		padding: 80px 0;
+	}
+	@media @mobilebig{
+		padding: 50px 0;
+	}
 }
 .works{
 	display: flex;
@@ -31,4 +51,12 @@
 .works__col{
 	flex-basis: 33.33333%;
 	padding:  20px;
+	@media @tablet{
+		flex-basis: 50%;
+	}
+	@media @mobilebig{
+		flex-basis: 100%;
+		margin: 0 20px;
+	}
+
 }
