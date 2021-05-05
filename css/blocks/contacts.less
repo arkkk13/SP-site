@@ -2,23 +2,41 @@
 
 .contacts{
 	background-image: url('/../../img/bg-contacts.png');
+	background-position: 50% 50% ;
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 	padding: 100px 0;
+
+	@media @pcsmall {
+		padding: 70px 0;
+
+	}
 }
 .contacts__header{
 	text-align: center;
 	margin-bottom: 50px;
+	@media @tablet {
+		margin-bottom: 40px;
+	}
 
 }
 .contacts__title{
 	font-weight: 800;
 	font-size: 45px;
 	line-height: 120%;
-	padding-bottom: 40px;
+	margin-bottom: 40px;
 	text-align: center;
 
 	color: #FFFFFF;
+
+	@media @pcsmall {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+	@media @tablet {
+		font-size: 30px;
+	}
 }
 .contacts__text{
 	font-size: 18px;
@@ -30,17 +48,25 @@
 	text-align: center;
 
 	color: #FFFFFF;
+
+	@media @tablet {
+		font-size: 16px;
+	}
 }
 .phones{
 	display: flex;
 	flex-wrap: wrap;
+	@media @pcsmall {
+		justify-content: center;
+
+	}
 }
 .phones__col{
 	max-width: 370px;
 	text-align: center;
-	width: 33.3333%;
+	flex-basis: 33.33%;
 	background-color: #fff;
-	margin-right: 20px;
+	margin:0 10px;
 	padding: 30px 60px;
 	border-radius: 25px;
 	box-shadow: 0px 5px 5px fade(#fff, 15%);
@@ -50,9 +76,29 @@
 	&:hover{
 		box-shadow: 0px 5px 15px fade(#fff, 15%);
 	}
+	@media @pcsmall {
+		flex-basis: 50%;
+		margin:10px;
+		padding: 25px 60px;
+
+	}
+	@media @tablet {
+		flex-basis: 45%;
+		padding: 25px 35px;
+	}
+	@media @mobilebig {
+		flex-basis: 100%;
+		padding: 25px 35px;
+	}
 }
 .last--phones__col{
 	margin-right: -15px;
+	@media @tablet {
+		margin-right: 10px;
+	}
+	@media @pcsmall {
+		margin-right: 10px;
+	}
 }
 
 
@@ -66,42 +112,30 @@
 	position: relative;
 	margin: 15px 0;
 
+	@media @tablet {
+		font-size: 22px;
+		margin: 10px 0;
+	}
 
 
-// 	&:after{
-// 		content: "";
-// 		width: 100%;
-// 		height: 1px;
-// 		background-color: lightgrey ;
-// 		position: absolute;
-// 		bottom: -5px;
-// 		left: 0;
-// 		z-index: 1;
-
-// 		transition: background-color .2s linear,height .2s linear ;
-// 	}
-// 	&:hover,
-// 	&.active{
-// 		&:after{
-// 			background-color: @dark-blue ;
-// 			height: 2px;
-// 		}
-
-// 	}
  }
 
 .phones__number{
 	padding: 15px 0;
 	border-top: 2px solid rgb(172, 172, 172);
 	font-weight: 600;
-font-size: 24px;
-line-height: 140%;
-text-align: center;
+	font-size: 24px;
+	line-height: 140%;
+	text-align: center;
 
-color: #000B46;
-transition: border-top .2s linear ;
-&:hover{
-	border-top: 2px solid @dark-blue;
-}
+	color: #000B46;
+	transition: border-top .2s linear ;
+	&:hover{
+		border-top: 2px solid @dark-blue;
+	}
+
+	@media @tablet {
+		font-size: 22px;
+	}
 
 }
