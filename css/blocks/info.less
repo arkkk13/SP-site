@@ -1,18 +1,35 @@
 // main: ../style.less
 
+.info{
+	background-color: #FDFDFD;
+}
 //-------------------ИнфоХедер
 .info__header{
 	display: flex;
 	margin-bottom: 60px;
-
+	@media @mobile{
+		display: block;
+	}
 }
 
 .info__heading{
-	width: 50%;
+	flex-basis: 50%;
 	position: relative;
+	@media @pcsmall{
+		flex-basis: 40%;
+	}
+
 }
 .info__text{
-	width: 50%;
+	flex-basis: 50%;
+
+	@media @pcsmall{
+		flex-basis: 60%;
+	}
+
+	@media @tablet{
+		font-size: 16px;
+	}
 }
 
 .info__title{
@@ -23,6 +40,14 @@
 	line-height: 120%;
 	color: @dark-blue;
 	margin-top: 110px;
+
+	@media @pcsmall{
+		font-size: 35px;
+	}
+	@media @tablet{
+		font-size: 30px;
+		margin-top: 90px;
+	}
 
 }
 
@@ -35,6 +60,23 @@
 	line-height: 120%;
 	color: #F4F3F8;
 	z-index: 1;
+
+	@media @pcsmall{
+		font-size: 250px;
+		top: -30px;
+		left: 10px;
+	}
+	@media @tablet{
+		font-size: 180px;
+		top: 0px;
+		left: 0px;
+	}
+	@media @mobilebig{
+		left: -55px;
+	}
+	@media @mobile{
+		display: none;
+	}
 }
 //----------------/ИнфоХедер
 
@@ -45,22 +87,41 @@
 }
 
 .member{
-	width: 33.33333%;
-	max-width: 370px;
-	background-color: #fff;
-	padding: 35px 50px;
-	margin-right: 30px;
 	text-align: center;
+	background-color: #fff;
+	min-height: 370px;
+	margin:0 15px;
 	border-radius: 25px;
-	box-shadow: 0px 5px 5px fade(#000, 15%);
+	box-shadow: 0px 5px 5px fade(#000, 25%);
+
+	@media @mobile{
+		min-height: 315px;
+
+	}
+	@media @mobilesmall {
+		min-height: 275px;
+		max-width:200px ;
+	}
+
+
 }
 
-.last--member{
-	margin-right: -15px;
-}
+
 .member__image{
+	margin-top: 35px;
 	border-radius: 50%;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
+	@media @tablet{
+		margin-top: 45px;
+		width: 140px;
+	}
+
+	@media @mobile{
+		width: 120px;
+	}
+	@media @mobilesmall {
+		width: 110px;
+	}
 }
 .member__name{
 	font-weight: 600;
@@ -69,12 +130,33 @@
 	text-align: center;
 	color: #283149;
 	margin-bottom: 10px;
+	@media @tablet{
+		font-size: 20px;
+	}
+	@media @mobile{
+		font-size: 18px;
+	}
+	@media @mobilesmall {
+		font-size: 16px;
+	}
 }
 .member__quality{
 	font-size: 18px;
 	line-height: 140%;
-
+	padding: 0 20px 10px;
 	text-align: center;
 
 	color: #404B69;
+
+	@media @tablet{
+		font-size: 16px;
+	}
+
+	@media @mobile{
+		font-size: 16px;
+	}
+
+	@media @mobilesmall {
+		font-size: 14px;
+	}
 }
